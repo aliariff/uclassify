@@ -9,8 +9,6 @@
 # Endpoints
 Check if it's running: http://localhost/
 
-`POST /language-detector`
+`GET /language-detector?text=guten tag`
 
-`POST /sport-topics`
-
-Body Example: `{ "text": "manchester united" }` or `{ "text": ["guten tag", "good morning"] }`
+`GET /sport-topics?text=manchester united`
