@@ -7,6 +7,8 @@
 `docker run -d -p 80:9292 uclassify-app`
 
 # Endpoints
+Check if it's running: http://localhost/
+
 `POST /language-detector`
 
 `POST /sport-topics`
