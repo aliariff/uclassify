@@ -1,5 +1,25 @@
 # uclassify
 
+# Map Reduce
+```
+map = function() {
+  if (this.type == "product" && this.producer == "Samsung")
+    emit(key: 1, price: this.price)
+}
+
+reduce = function(key, values) {
+  sum = 0;
+  count = 0;
+  avgPrice = 0;
+  for value in values {
+    sum += value.price;
+    count += 1;
+  }
+  avgPrice = sum / count;
+  emit(key: 1, avgPrice);
+}
+```
+
 # Build Image
 `docker build . -t uclassify-app`
 
